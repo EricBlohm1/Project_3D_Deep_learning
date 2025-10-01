@@ -1,7 +1,16 @@
-The final notebook for reconstruction is: /VoxNet/VoxNet\_recon\_latent512\_skip.ipynb and the autoencoder without skip connections are given in /VoxNet/VoxNet\_recon.ipynb  
+# 3D Deep learning, Classification and Reconstruction/Shape Completion
+This project was made in the course Advanced Machine Learning with Neural Networks, from Chalmers. I was given the dataset and objective, and I chose to implement 2 novel deep learning models (PointNet and VoxNet) for 3D object classification and compare them. Furthermore, I was curious to see if I could extend the VoxNet architecture to handle shape completion/reconstruction, based on the contents of the course. Thus, I ended up creating a U-net style model able to complete partial objects with an IoU score of 68.55%.
 
-The notebooks for classification are: /VoxNet/VoxNet\_classification.ipynb and /PointNet/PointNet\_cls.ipynb
+# Repo structure
+## Classification
+- /PointNet
+- /VoxNet
 
-The utils notebook is for downloading the dataset, and precomputing the voxel grids.
+## Shape Completion
+- /Unet-style_VoxNet
+  - VoxNetAE.py has no skip connections
+  - VoxNetAE_Skip.py has skip connections between each of the convolution blocks in the encoder to the decoder. 
 
-Finally, the neural network models are given in the python files.
+## utils notebook for downloading dataset
+
+## Short report for the person curious about the findings
