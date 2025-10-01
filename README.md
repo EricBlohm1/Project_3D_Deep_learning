@@ -13,4 +13,4 @@ This project was made in the course Advanced Machine Learning with Neural Networ
 
 ## utils notebook for downloading dataset
 
-## Short report for the person curious about the findings
+## Short report
