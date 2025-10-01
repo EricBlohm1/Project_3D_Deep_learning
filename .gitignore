@@ -6,3 +6,4 @@
 /VoxNet/ModelNet10_voxelized_64.zip
 *.pth
 *.png
+**/__pycache__/
