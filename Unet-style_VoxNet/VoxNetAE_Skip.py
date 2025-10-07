@@ -2,6 +2,8 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
+# U-net style model, with VoxNet as encoder. Used for shape completion.
+
 class VoxNetAE_Skip(nn.Module):
     def __init__(self, latent_dim=256):
         super(VoxNetAE_Skip, self).__init__()
